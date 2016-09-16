@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_iv"
+        android:src="@drawable/icon1"
+        android:layout_gravity="center_horizontal"/>
+    <com.example.wincber.viewpagetest.NestingViewPager
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/nesting_vp">
+    </com.example.wincber.viewpagetest.NestingViewPager>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
